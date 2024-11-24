@@ -1,0 +1,119 @@
+<html>
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="ConcertHubb.html">HOME</a></li>
+                    <li><a href="concerts.html">CONCERTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<h1>Contact Us</h1>
+       
+    </section>
+
+
+<!--Contact Us-->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5070435295124!2d28.82838507557912!3d40.99227402041092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa366a64dab9f%3A0xaadd0d94d9938d0f!2zS8O8bHTDvHIgw5xuaXZlcnNpdGVzaQ!5e0!3m2!1sen!2str!4v1700140390090!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+        <i class="fa fa-home" ></i>
+        <span>
+            <h5>Ataköy, Kültür Üniversitesi</h5>
+            <p>Türkiye, İstanbul</p>
+        </span>
+
+         </div>
+         <div>
+            <i class="fa fa-phone" ></i>
+            <span>
+                <h5>+90 5316666298</h5>
+                <p>Monday To Saturday, 10AM to 6PM</p>
+            </span>
+    
+             </div>
+             <div>
+                <i class="fa fa-envelope" ></i>
+                <span>
+                    <h5>2200002533@stu.iku.edu.tr</h5>
+                    <p>Email Us your query</p>
+                </span>
+        
+                 </div>
+            
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter Email Adress" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea   rows="8" name="message" placeholder="Message"required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+            </form>
+
+
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!--FOOTER-->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Welcome to Concert Hub, where music comes alive! As passionate concert enthusiasts, we've curated a platform dedicated to delivering exceptional live experiences. <br> Our mission is to connect music lovers worldwide, providing a gateway to unforgettable concerts, exclusive insights, and seamless ticketing. <br>Dive into the rhythm, feel the energy, and join us on a journey where the love for music knows no boundaries. <br> Discover, connect, and experience the magic of live music with Concert Hub</p>
+
+    <div class="icons">
+        <i class="fa-brands fa-facebook" ></i>
+        <i class="fa-brands fa-twitter" ></i>
+        <i class="fa-brands fa-instagram" ></i>
+        <i class="fa-brands fa-linkedin" ></i>
+        
+    </div>
+    
+</section>
+
+
+
+
+<!--JAVASCRİPT For Toogle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200";
+        }
+    </script>
+</body>
+</html>

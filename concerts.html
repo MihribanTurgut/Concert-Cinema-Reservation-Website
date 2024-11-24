@@ -1,0 +1,728 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">   
+     <link rel="stylesheet" href="style.css">
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+<link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+ 
+    <title>Concerts</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="ConcertHubb.html">HOME</a></li>
+                    <li><a href="concerts.html">CONCERTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<h1>Concerts</h1>
+     
+  <section class="concert-items">
+   <div id="rock" >
+    <div class="type-list-container">
+        <div class="type-list-wrapper">
+    <h1>Rock</h1>
+            <ul class="type-list">
+                <li class="type-item">
+                    <img class="type-item-img" src="images/Therolling.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">The Rolling Stone</span>
+                        
+                        <div class="type-item-buttons">
+                            
+                           <button onclick="goTocustomerPage('The Rolling Stone',72)">Buy now</button>
+                           <h3 id="RollingP">Price 72$</h3>
+                          
+                    
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/pinkfloyd.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Pink Floyd</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Pink Floyd',81)">Buy now</button>
+       <h3 id="PinkP">Price 81$</h3>
+                           
+                           
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/nirvana.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Nirvana</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Nirvana',74)">Buy now</button>
+       <h3 id="nirvanaP">Price 74$</h3>
+                           
+                           
+                        </div>
+                    </div>
+                    <li class="type-item">
+                        <img class="type-item-img" src="images/Thebeatles.jpg" alt="">
+                        <div class="type-item-info">
+                            <span class="type-item-title">The Beatles</span>
+                            <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('The Beatles',97)">Buy now</button>
+       <h3 id="ThebeatP">Price 97$</h3>
+                                
+                            </div>
+                        </div>
+                        <li class="type-item">
+                            <img class="type-item-img" src="images/queen.jpg" alt="">
+                            <div class="type-item-info">
+                                <span class="type-item-title">Queen</span>
+                                <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Queen',64)">Buy now</button>
+       <h3 id="queenP">Price 64$</h3>
+                                    
+                                </div>
+                            </div>
+                            <li class="type-item">
+                                <img class="type-item-img" src="images/guns.jpg" alt="">
+                                <div class="type-item-info">
+                                    <span class="type-item-title">Guns N Roses</span>
+                                    <div class="type-item-buttons">
+                                <button onclick="goTocustomerPage('Guns N Roses',84)">Buy now</button>
+                                 <h3 id="gunsP">Price 84$</h3>
+                                        
+                                    </div>
+                                </div>
+                                <li class="type-item">
+                                    <img class="type-item-img" src="images/jimi.jpg" alt="">
+                                    <div class="type-item-info">
+                                        <span class="type-item-title">Jimi Hendrix</span>
+                                        <div class="type-item-buttons">
+                                    <button onclick="goTocustomerPage('Jimi Hendrix',91)">Buy now</button>
+                                     <h3 id="JimiP">Price 91$</h3>
+
+                                            
+                                            
+                                        </div>
+                                    </div>
+            </ul>
+            <i class="bi bi-chevron-right arrow"></i>
+            
+        </div>
+    </div>
+   </div>
+    
+
+    <div class="type-list-container">
+        <div class="type-list-wrapper">
+            <div id="rap">
+    <h1>Rap</h1>
+            <ul class="type-list">
+                <li class="type-item">
+                    <img class="type-item-img" src="images/kanye.jpeg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Kanye West </span>
+                        <div class="type-item-buttons">
+                    <button onclick="goTocustomerPage('Kanye West',84)">Buy now</button>
+                    <h3 id="kanyeP">Price 84$</h3>
+                          
+                            
+                        </div>
+                    </div>
+                    <li class="type-item">
+                        <img class="type-item-img" src="images/nicki.jpg" alt="">
+                        <div class="type-item-info">
+                            <span class="type-item-title">Nicki Minaj</span>
+                            <div class="type-item-buttons">
+                            <button onclick="goTocustomerPage('Nicki Minaj',89)">Buy now</button>
+                            <h3 id="nickiP">Price 89$</h3>
+                           
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/eminem.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Eminem</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Eminem',180)">Buy now</button>
+       <h3 id="emienmP">Price 180$</h3>
+                            
+                        </div>
+                    </div>
+                    <li class="type-item">
+                        <img class="type-item-img" src="images/drake.jpg" alt="">
+                        <div class="type-item-info">
+                            <span class="type-item-title">Drake</span>
+                            <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Drake',110)">Buy now</button>
+       <h3 id="drakeP">Price 110$</h3>
+                              
+                                
+                            </div>
+                        </div>
+                        <li class="type-item">
+                            <img class="type-item-img" src="images/kendricklamar.jpg" alt="">
+                            <div class="type-item-info">
+                                <span class="type-item-title">Kendrick Lamar </span>
+                                <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Kendrick Lamar',70)">Buy now</button>
+       <h3 id="lamarP">Price 70$</h3>
+                                   
+                                    
+                                </div>
+                            </div>
+                            <li class="type-item">
+                                <img class="type-item-img" src="images/JayZ.jpg" alt="">
+                                <div class="type-item-info">
+                                    <span class="type-item-title">Jay Z</span>
+                                    <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Jay Z',70)">Buy now</button>
+       <h3 id="jayzP">Price 70$</h3>
+
+                                        
+                                    </div>
+                                </div>
+                                <li class="type-item">
+                                    <img class="type-item-img" src="images/tupac.jpg" alt="">
+                                    <div class="type-item-info">
+                                        <span class="type-item-title">Tupac</span>
+                                        <div class="type-item-buttons">
+                                     <button onclick="goTocustomerPage('Tupac',230)">Buy now</button>
+                                     <h3 id="tupacP">Price 230$</h3>
+
+                                            
+                                            
+                                        </div>
+                                    </div>
+            </ul>
+            <i class="bi bi-chevron-right arrow"></i>
+            
+        </div>
+    </div>
+</div>
+   
+<div id="pop">
+    <div class="type-list-container">
+        <div class="type-list-wrapper">
+    <h1>Pop</h1>
+            <ul class="type-list">
+                <li class="type-item">
+                    <img class="type-item-img" src="images/taylorswift.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Taylor Swift</span>
+                        <div class="type-item-buttons">
+                           <button onclick="goTocustomerPage('Taylor Swift',90)">Buy now</button>
+                           <h3 id="TaylorP">Price 90$</h3>
+                           
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/arianagrande.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Ariana Grande</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Ariana Grande',97)">Buy now</button>
+       <h3 id="ArianaP">Price 97$</h3>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/ladygaga.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Lady Gaga</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Lady Gaga',96)">Buy now</button>
+       <h3 id="gagaP">Price 96$</h3>
+                           
+                        </div>
+                    </div>
+                    <li class="type-item">
+                        <img class="type-item-img" src="images/edsheeran.jpg" alt="">
+                        <div class="type-item-info">
+                            <span class="type-item-title">Ed Sheeran</span>
+                            <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Ed Sheeran',72)">Buy now</button>
+       <h3 id="edP">Price 72$</h3>
+                              
+                           
+                            </div>
+                        </div>
+                        <li class="type-item">
+                            <img class="type-item-img" src="images/Madonna.jpg" alt="">
+                            <div class="type-item-info">
+                                <span class="type-item-title">Madonna </span>
+                                <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Madonna',87)">Buy now</button>
+       <h3 id="MadonnaP">Price 87$</h3>
+                                   
+                                  
+                                </div>
+                            </div>
+                            <li class="type-item">
+                                <img class="type-item-img" src="images/KatyPerry.jpg" alt="">
+                                <div class="type-item-info">
+                                    <span class="type-item-title">Katy Perry</span>
+                                    <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Katy Perry',91)">Buy now</button>
+       <h3 id="kattyP">Price 91$</h3>
+
+                                    
+                                    </div>
+                                </div>
+                                <li class="type-item">
+                                    <img class="type-item-img" src="images/justinTim.jpg" alt="">
+                                    <div class="type-item-info">
+                                        <span class="type-item-title">Justin Timberlake</span>
+                                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Justin Timberlake',82)">Buy now</button>
+       <h3 id="justinP">Price 82$</h3>
+
+                                            
+                                         
+                                        </div>
+                                    </div>
+            </ul>
+            <i class="bi bi-chevron-right arrow"></i>
+            
+        </div>
+    </div>
+</div>
+    
+<div id="jazz">
+    <div class="type-list-container">
+        <div class="type-list-wrapper">
+    <h1>Jazz</h1>
+            <ul class="type-list">
+                <li class="type-item">
+                    <img class="type-item-img" src="images/Louisarm.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Louis Armstrong</span>
+                        <div class="type-item-buttons">
+                           <button onclick="goTocustomerPage('Louis Armstrong',99)">Buy now</button>
+                           <h3 id="LouisP">Price 99$</h3>
+                          
+                          
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/milesdavis.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Miles Davis</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Miles Davis',90)">Buy now</button>
+       <h3 id="milesP">Price 90$</h3>
+                           
+                        
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/ella.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Ella Fitzgerald</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Ella Fitzgerald',95)">Buy now</button>
+       <h3 id="ellaP">Price 95$</h3>
+                           
+                         
+                        </div>
+                    </div>
+                    <li class="type-item">
+                        <img class="type-item-img" src="images/sarah.jpg" alt="">
+                        <div class="type-item-info">
+                            <span class="type-item-title">Sarah Vaughan</span>
+                            <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Sarah Vaughan',98)">Buy now</button>
+       <h3 id="sarahP">Price 98$</h3>
+                              
+                           
+                            </div>
+                        </div>
+                        <li class="type-item">
+                            <img class="type-item-img" src="images/nina.jpg" alt="">
+                            <div class="type-item-info">
+                                <span class="type-item-title">Nina Simone</span>
+                                <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Nina Simone',92)">Buy now</button>
+       <h3 id="ninaP">Price 92$</h3>
+                                   
+                             
+                                </div>
+                            </div>
+                            <li class="type-item">
+                                <img class="type-item-img" src="images/duke.jpg" alt="">
+                                <div class="type-item-info">
+                                    <span class="type-item-title">Duke Ellington</span>
+                                    <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Duke Ellington',91)">Buy now</button>
+       <h3 id="dukeP">Price 91$</h3>
+
+                                 
+                                    </div>
+                                </div>
+                                <li class="type-item">
+                                    <img class="type-item-img" src="images/HerbieHancock.JPG" alt="">
+                                    <div class="type-item-info">
+                                        <span class="type-item-title">Herbie Hancock</span>
+                                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Herbie Hancock',90)">Buy now</button>
+       <h3 id="herbieP">Price 90$</h3>
+
+                                            
+                                      
+                                        </div>
+                                    </div>
+            </ul>
+            <i class="bi bi-chevron-right arrow"></i>
+            
+        </div>
+    </div>
+   
+   
+<div id="alternative">
+    <div class="type-list-container">
+        <div class="type-list-wrapper">
+    <h1>Alternative</h1>
+            <ul class="type-list">
+                <li class="type-item">
+                    <img class="type-item-img" src="images/radio.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Radiohead</span>
+                        <div class="type-item-buttons">
+                           <button onclick="goTocustomerPage('Radiohead',83)">Buy now</button>
+                           <h3 id="radioP">Price 83$</h3>
+                          
+                       
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/arctic.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Arctic Monkeys</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Arctic Monkeys',99)">Buy now</button>
+       <h3 id="arcticP">Price 99$</h3>
+                           
+                  
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/tame.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Tame Impala</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Tame Impala',95)">Buy now</button>
+       <h3 id="tameP">Price 95$</h3>
+                           
+                       
+                        </div>
+                    </div>
+                    <li class="type-item">
+                        <img class="type-item-img" src="images/björk.jpg" alt="">
+                        <div class="type-item-info">
+                            <span class="type-item-title">Björk</span>
+                            <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Björk',80)">Buy now</button>
+       <h3 id="BjörkP">Price 80$</h3>
+                              
+                    
+                            </div>
+                        </div>
+                        <li class="type-item">
+                            <img class="type-item-img" src="images/Pixies.jpg" alt="">
+                            <div class="type-item-info">
+                                <span class="type-item-title">Pixies</span>
+                                <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Pixies',90)">Buy now</button>
+       <h3 id="PixiesP">Price 90$</h3>
+                                   
+                              
+                                </div>
+                            </div>
+                            <li class="type-item">
+                                <img class="type-item-img" src="images/ArcadeFire.jpg" alt="">
+                                <div class="type-item-info">
+                                    <span class="type-item-title">Arcade Fire</span>
+                                    <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Arcade Fire',97)">Buy now</button>
+       <h3 id="ArcadeP">Price 97$</h3>
+
+                              
+                                    </div>
+                                </div>
+                                <li class="type-item">
+                                    <img class="type-item-img" src="images/TheStrokes.jpg" alt="">
+                                    <div class="type-item-info">
+                                        <span class="type-item-title">The Strokes</span>
+                                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('The Strokes',94)">Buy now</button>
+       <h3 id="strokeP">Price 94$</h3>
+
+                                            
+                                
+                                        </div>
+                                    </div>
+            </ul>
+            <i class="bi bi-chevron-right arrow"></i>
+            
+        </div>
+    </div>
+</div>
+   
+<div id="local">
+    <div class="type-list-container">
+        <div class="type-list-wrapper">
+    <h1>Local</h1>
+            <ul class="type-list">
+                <li class="type-item">
+                    <img class="type-item-img" src="images/yurtseven.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Yurtseven Kardeşler</span>
+                        <div class="type-item-buttons">
+                           <button onclick="goTocustomerPage('Yurtseven Kardeşler',91)">Buy now</button>
+                           <h3 id="yurtsevenP">Price 91$</h3>
+
+                          
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/taksim.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Taksim Trio</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Taksim Trio',66)">Buy now</button>
+       <h3 id="taksimP">Price 66$</h3>
+                           
+                          
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/dedub.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Dedublüman</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Dedublüman',100)">Buy now</button>
+       <h3 id="dedybP">Price 100$</h3>
+                           
+                           
+                        </div>
+                    </div>
+                    <li class="type-item">
+                        <img class="type-item-img" src="images/hepsi.jpg" alt="">
+                        <div class="type-item-info">
+                            <span class="type-item-title">Hepsi</span>
+                            <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Hepsi',90)">Buy now</button>
+       <h3 id="hepsiP">Price 90$</h3>
+                              
+                            </div>
+                        </div>
+                        <li class="type-item">
+                            <img class="type-item-img" src="images/AjdaPekkan.jpg" alt="">
+                            <div class="type-item-info">
+                                <span class="type-item-title">Ajda Pekkan</span>
+                                <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Ajda Pekkan',98)">Buy now</button>
+       <h3 id="ajdaP">Price 98$</h3>
+                                   
+                                   
+                                </div>
+                            </div>
+                            <li class="type-item">
+                                <img class="type-item-img" src="images/YıldızTilbe.jpeg" alt="">
+                                <div class="type-item-info">
+                                    <span class="type-item-title">Yıldız Tilbe</span>
+                                    <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Yıldız Tilbe',88)">Buy now</button>
+       <h3 id="yildizP">Price 88$</h3>
+
+                                        
+                                    </div>
+                                </div>
+                                <li class="type-item">
+                                    <img class="type-item-img" src="images/ankaralınamık.jpg" alt="">
+                                    <div class="type-item-info">
+                                        <span class="type-item-title">Ankaralı Namık</span>
+                                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Ankaralı Namık',98)">Buy now</button>
+       <h3 id="ankaraP">Price 98$</h3>
+
+                                            
+                                        </div>
+                                    </div>
+            </ul>
+            <i class="bi bi-chevron-right arrow"></i>
+            
+        </div>
+    </div>
+</div>
+    
+<div id="blues">
+    <div class="type-list-container">
+        <div class="type-list-wrapper">
+    <h1>Blues</h1>
+            <ul class="type-list">
+                <li class="type-item">
+                    <img class="type-item-img" src="images/B.B.King.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">B.B. King</span>
+                        <div class="type-item-buttons">
+                           <button onclick="goTocustomerPage('B.B. King',90)">Buy now</button>
+                           <h3 id="bbP">Price 90$</h3>
+                          
+                        
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/MuddyWaters.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Muddy Waters</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Muddy Waters',81)">Buy now</button>
+       <h3 id="muddyP">Price 81$</h3>
+                           
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="type-item">
+                    <img class="type-item-img" src="images/RobertJohnson.jpg" alt="">
+                    <div class="type-item-info">
+                        <span class="type-item-title">Robert Johnson</span>
+                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Robert Johnson',78)">Buy now</button>
+       <h3 id="robertP">Price 78$</h3>
+                           
+                          
+                        </div>
+                    </div>
+                    <li class="type-item">
+                        <img class="type-item-img" src="images/lee.jpg" alt="">
+                        <div class="type-item-info">
+                            <span class="type-item-title">John Lee Hooker</span>
+                            <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('John Lee Hooker',84)">Buy now</button>
+       <h3 id="leeP">Price 84$</h3>
+                              
+                               
+                            </div>
+                        </div>
+                        <li class="type-item">
+                            <img class="type-item-img" src="images/taj.jpg" alt="">
+                            <div class="type-item-info">
+                                <span class="type-item-title">Taj Mahal</span>
+                                <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Taj Mahal',86)">Buy now</button>
+       <h3 id="tajP">Price 86$</h3>
+                                   
+                                 
+                                </div>
+                            </div>
+                            <li class="type-item">
+                                <img class="type-item-img" src="images/EttaJames.jpg" alt="">
+                                <div class="type-item-info">
+                                    <span class="type-item-title">Etta James</span>
+                                    <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Etta James',87)">Buy now</button>
+       <h3 id="ettaP">Price 87$</h3>
+
+                                      
+                                    </div>
+                                </div>
+                                <li class="type-item">
+                                    <img class="type-item-img" src="images/KokoTaylor.jpg" alt="">
+                                    <div class="type-item-info">
+                                        <span class="type-item-title">Koko Taylor</span>
+                                        <div class="type-item-buttons">
+       <button onclick="goTocustomerPage('Koko Taylor',92)">Buy now</button>
+       <h3 id="kokoP">Price 92$</h3>
+
+                                            
+                            
+                                        </div>
+                                    </div>
+            </ul>
+            <i class="bi bi-chevron-right arrow"></i>
+            
+        </div>
+    </div>
+</div>
+   
+    <script src="script.js"></script>
+
+
+  </section>
+       
+  <script>
+ 
+    function goTocustomerPage(concertType, price) {
+        
+        console.log(`Buying ticket for ${concertType} at $${price}`);
+
+       
+        window.location.href = `Ticket.html?concertType=${concertType}&price=${price}`;
+    }
+</script>
+
+
+
+   
+<!--FOOTER-->
+
+<section class="footer">
+    
+    <p>Discover, connect, and experience the magic of live music with Concert Hub</p>
+
+    <div class="icons">
+        <i class="fa-brands fa-facebook" ></i>
+        <i class="fa-brands fa-twitter" ></i>
+        <i class="fa-brands fa-instagram" ></i>
+        <i class="fa-brands fa-linkedin" ></i>
+        
+    </div>
+    
+</section>
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200";
+    }
+</script>
+</body>
+</html>

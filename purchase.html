@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">   
+     <link rel="stylesheet" href="style.css">
+    <title>Purchase</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="ConcertHubb.html">HOME</a></li>
+                    <li><a href="concerts.html">CONCERTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Purchase</h1>
+        
+       </section>
+
+       <form id="paymentForm">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required><br><br>
+        
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YYYY" required><br><br>
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+        
+        <input type="button" value="Pay" onclick="goToconfipage()">
+    </form>
+
+    <script>
+
+        function validateForm() {
+       var cardNumber = document.getElementById("cardNumber").value;
+       var expirationDate = document.getElementById("expirationDate").value;
+       var cvv = document.getElementById("cvv").value;
+
+        if (cardNumber !== "" & expirationDate !== "" & cvv !== "") {
+            window.location.href = "confi.html";
+        } else {
+            alert("Please fill in all fields before proceeding.");
+        }
+    }
+
+        function goToconfipage() {
+            window.location.href = "confi.html";
+        }
+    </script>
+
+
+       <section class="footer">
+        <p>Discover, connect, and experience the magic of live music with Concert Hub</p>
+    
+        <div class="icons">
+            <i class="fa-brands fa-facebook" ></i>
+            <i class="fa-brands fa-twitter" ></i>
+            <i class="fa-brands fa-instagram" ></i>
+            <i class="fa-brands fa-linkedin" ></i>
+            
+        </div>
+        
+         </section>
+         <script src="tickets.js"></script>
+         
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200";
+        }
+    </script>
+    </body>
+    </html>
+    

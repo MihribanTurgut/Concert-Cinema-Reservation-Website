@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">   
+     <link rel="stylesheet" href="style.css">
+    <title>About US</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="ConcertHubb.html">HOME</a></li>
+                    <li><a href="concerts.html">CONCERTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<h1>About Us</h1>
+       
+    </section>
+
+
+                    
+
+
+
+<!--About Us Content-->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are The World's Biggest Organization Company</h1>
+            <p>Welcome to Concert Hub – your source for unforgettable concert experiences. We're more than a platform; we're a community of music lovers dedicated to the magic of live performances. Our mission is to connect artists and fans in a virtual space.
+
+                As concert enthusiasts, we get the thrill of witnessing favorite artists, feeling the crowd's energy, and creating lasting memories. Concert Hub enhances your journey, from discovering events to securing tickets seamlessly.
+                
+                What makes us unique? Our commitment to more than event listings. Explore exclusive behind-the-scenes content, artist interviews, and connect with fellow music lovers. Our user-friendly interface ensures easy navigation.
+                
+                Join us on this musical adventure, where the love for concerts knows no bounds. Concert Hub is more than a website; it's a celebration of the artistry, diversity, and joy that live music brings. Let the melody guide you, and let's make every concert extraordinary, together.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/About-Us-1-1982x1024.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!--FOOTER-->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Welcome to Concert Hub, where music comes alive! As passionate concert enthusiasts, we've curated a platform dedicated to delivering exceptional live experiences. <br> Our mission is to connect music lovers worldwide, providing a gateway to unforgettable concerts, exclusive insights, and seamless ticketing. <br>Dive into the rhythm, feel the energy, and join us on a journey where the love for music knows no boundaries. <br> Discover, connect, and experience the magic of live music with Concert Hub</p>
+
+    <div class="icons">
+        <i class="fa-brands fa-facebook" ></i>
+        <i class="fa-brands fa-twitter" ></i>
+        <i class="fa-brands fa-instagram" ></i>
+        <i class="fa-brands fa-linkedin" ></i>
+        
+    </div>
+    
+</section>
+
+
+
+
+
+<!--JAVASCRİPT For Toogle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200";
+        }
+    </script>
+</body>
+</html>
